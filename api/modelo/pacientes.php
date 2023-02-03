@@ -1,7 +1,7 @@
 <?php
     include '../modelo/conexion.php';
 
-    class usuarios{
+    class pacientes{
 
         private $con="";
 
@@ -12,6 +12,8 @@
 
         }
 
+        //select
+        
         public function selectPacientes(){
             
             $query = "SELECT *FROM tbl_pacientes;";
@@ -25,12 +27,13 @@
             
             $idUsuario = $id;
             
-            $query = "SELECT *FROM usuarios WHERE pac_id='".$id."';";
+            $query = "SELECT *FROM tbl_pacientes WHERE pac_id='".$id."';";
             $resultado=$this->con->prepare($query);
             $resultado->execute();
 
             return $resultado;
         }
+
 
 
     }

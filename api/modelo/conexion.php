@@ -15,7 +15,7 @@
             $this->servidor="localhost";
             $this->usuario="root";
             $this->password="";
-            $this->bd="biblioteca";
+            $this->bd="pacientesexamen";
             $this->conexion="";
         
         }
