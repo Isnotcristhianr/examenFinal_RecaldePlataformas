@@ -34,7 +34,6 @@
       <!-- Grid container -->
 
 
-  </footer>
   <!--JS-->
   <script src="../assets/js/funciones.js"></script>
   <!--BOSTRAP JS-->
@@ -48,6 +47,7 @@
           $('#tblPacientes').DataTable();
       });
   </script>
+  </footer>
   </body>
 
   </html>

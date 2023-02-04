@@ -25,7 +25,7 @@
     <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="../assets/imgs/doctor.png" style="height: 30px;">
+                <a class="navbar-brand" href="http://localhost/examenfinal_recalde/pacientes/index.php/inicio"> <img src="../assets/imgs/doctor.png" style="height: 30px;">
                     SanaSana</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -56,6 +56,7 @@
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes">Ver Pacientes</a></li>
                                     <li><a class="dropdown-item" href="#">Calcular IMC</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/asignarImc">Asignar IMC</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>

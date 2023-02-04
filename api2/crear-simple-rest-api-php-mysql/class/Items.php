@@ -1,14 +1,14 @@
 <?php
 class Items{   
     
-    private $itemsTable = "items";      
-    public $id;
-    public $name;
-    public $description;
-    public $price;
-    public $category_id;   
-    public $created; 
-	public $modified; 
+    private $itemsTable = "tbl_pacientes";      
+    public $pac_id;
+    public $pac_nombre;
+    public $pac_dni;
+    public $pac_altura;
+    public $pac_peso;   
+    public $pac_imc; 
+	public $pac_resultado; 
     private $conn;
 	
     public function __construct($db){
@@ -16,9 +16,9 @@ class Items{
     }	
 	
 	function read(){	
-		if($this->id) {
+		if($this->pac_id) {
 			$stmt = $this->conn->prepare("SELECT * FROM ".$this->itemsTable." WHERE id = ?");
-			$stmt->bind_param("i", $this->id);					
+			$stmt->bind_param("i", $this->pac_id);					
 		} else {
 			$stmt = $this->conn->prepare("SELECT * FROM ".$this->itemsTable);		
 		}		
@@ -30,17 +30,18 @@ class Items{
 	function create(){
 		
 		$stmt = $this->conn->prepare("
-			INSERT INTO ".$this->itemsTable."(`name`, `description`, `price`, `category_id`, `created`)
-			VALUES(?,?,?,?,?)");
+			INSERT INTO ".$this->itemsTable."(`pac_nombre`, `pac_dni`, `pac_altura`, `pac_peso`, `pac_imc`, `pac_resultado`)
+			VALUES(?,?,?,?,?,?)");
 		
-		$this->name = htmlspecialchars(strip_tags($this->name));
-		$this->description = htmlspecialchars(strip_tags($this->description));
-		$this->price = htmlspecialchars(strip_tags($this->price));
-		$this->category_id = htmlspecialchars(strip_tags($this->category_id));
-		$this->created = htmlspecialchars(strip_tags($this->created));
+		$this->pac_nombre = htmlspecialchars(strip_tags($this->pac_nombre));
+		$this->pac_dni = htmlspecialchars(strip_tags($this->pac_dni));
+		$this->pac_altura = htmlspecialchars(strip_tags($this->pac_altura));
+		$this->pac_peso = htmlspecialchars(strip_tags($this->pac_peso));
+		$this->pac_imc = htmlspecialchars(strip_tags($this->pac_imc));
+		$this->pac_resultado = htmlspecialchars(strip_tags($this->pac_resultado));
 		
 		
-		$stmt->bind_param("ssiis", $this->name, $this->description, $this->price, $this->category_id, $this->created);
+		$stmt->bind_param("ssiis", $this->pac_nombre, $this->pac_dni, $this->pac_altura, $this->pac_peso, $this->pac_imc, $this->pac_resultado);
 		
 		if($stmt->execute()){
 			return true;
@@ -53,17 +54,18 @@ class Items{
 	 
 		$stmt = $this->conn->prepare("
 			UPDATE ".$this->itemsTable." 
-			SET name= ?, description = ?, price = ?, category_id = ?, created = ?
+			SET pac_nombre= ?, pac_dni= ?, pac_altura= ?, pac_peso= ?, pac_imc= ?, pac_resultado= ? 
 			WHERE id = ?");
 	 
-		$this->id = htmlspecialchars(strip_tags($this->id));
-		$this->name = htmlspecialchars(strip_tags($this->name));
-		$this->description = htmlspecialchars(strip_tags($this->description));
-		$this->price = htmlspecialchars(strip_tags($this->price));
-		$this->category_id = htmlspecialchars(strip_tags($this->category_id));
-		$this->created = htmlspecialchars(strip_tags($this->created));
+		$this->pac_id = htmlspecialchars(strip_tags($this->pac_id));
+		$this->pac_nombre = htmlspecialchars(strip_tags($this->pac_nombre));
+		$this->pac_dni = htmlspecialchars(strip_tags($this->pac_dni));
+		$this->pac_altura = htmlspecialchars(strip_tags($this->pac_altura));
+		$this->pac_peso = htmlspecialchars(strip_tags($this->pac_peso));
+		$this->pac_imc = htmlspecialchars(strip_tags($this->pac_imc));
+		$this->pac_resultado = htmlspecialchars(strip_tags($this->pac_resultado));
 	 
-		$stmt->bind_param("ssiisi", $this->name, $this->description, $this->price, $this->category_id, $this->created, $this->id);
+		$stmt->bind_param("ssiisi", $this->pac_nombre, $this->pac_dni, $this->pac_altura, $this->pac_peso, $this->pac_imc, $this->pac_resultado, $this->pac_id);
 		
 		if($stmt->execute()){
 			return true;
@@ -78,9 +80,9 @@ class Items{
 			DELETE FROM ".$this->itemsTable." 
 			WHERE id = ?");
 			
-		$this->id = htmlspecialchars(strip_tags($this->id));
+		$this->pac_id = htmlspecialchars(strip_tags($this->pac_id));
 	 
-		$stmt->bind_param("i", $this->id);
+		$stmt->bind_param("i", $this->pac_id);
 	 
 		if($stmt->execute()){
 			return true;
