@@ -41,7 +41,8 @@
                         "dni"=> $fila["pac_dni"],
                         "altura"=> $fila["pac_altura"],
                         "peso"=> $fila["pac_peso"],
-                        "imc"=> $fila["pac_imc"]
+                        "imc"=> $fila["pac_imc"],
+                        "resultado"=> $fila["pac_resultado"]
                     );
                     array_push($vectorPacientes, $item);
                 }

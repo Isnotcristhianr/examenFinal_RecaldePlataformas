@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!--DataTables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
     <!--Icono Navegador-->
     <link rel="icon" href="../assets/imgs/doctor.png">
 </head>
