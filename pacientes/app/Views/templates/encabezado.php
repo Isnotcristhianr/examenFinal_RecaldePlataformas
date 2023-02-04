@@ -46,7 +46,7 @@
                                 <a class="nav-link active" aria-current="page" href="http://localhost/examenfinal_recalde/pacientes/index.php/inicio">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pacientes</a>
+                                <a class="nav-link" href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes">Pacientes</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,7 +54,7 @@
                                     Consultorio
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="../ventanas/pacientes.php">Ver Pacientes</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes">Ver Pacientes</a></li>
                                     <li><a class="dropdown-item" href="#">Calcular IMC</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
