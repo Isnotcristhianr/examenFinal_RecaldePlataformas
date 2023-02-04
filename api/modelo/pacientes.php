@@ -25,17 +25,17 @@
 
         public function selectPacientesId($id){
             
-            $idUsuario = $id;
+           $idUsuario = (isset($_GET[$id]));
             
-            $query = "SELECT *FROM tbl_pacientes WHERE pac_id='".$id."';";
+            $query = "SELECT *FROM 'tbl_pacientes' WHERE pac_id='".$id."';";
             $resultado=$this->con->prepare($query);
             $resultado->execute();
 
             return $resultado;
         }
 
-
-
+        //actualizar
+        
     }
 
 ?>

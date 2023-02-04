@@ -14,10 +14,13 @@
             //si es get consultar y mostrar los datos del estudiante
             //para determinar el id y acorde a eso ejecutar el select
             if(isset($_GET['pac_id'])){
+                    
+                    $id=$_GET['pac_id'];
+                    $datos=$objPaciente->selectPacientesId($id);
+                    $numTotal=$datos->rowCount();
+                    
                 
-                $id=$_GET['pac_id'];
-                $datos=$objPaciente->selectPacientesId($id);
-                $numTotal=$datos->rowCount();
+               
 
             }else{
 
