@@ -23,4 +23,12 @@
             return $valor-> get()-> getResultArray();
         }
 
+        public function actualizar($data, $id){
+            $valor=$this->db->table('tbl_pacientes');
+            $valor->set($data);
+            $valor->where('pac_id', $id);
+    
+            return $valor->update();
+        }
+
 }

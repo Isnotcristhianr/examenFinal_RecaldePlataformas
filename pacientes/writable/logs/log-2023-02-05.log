@@ -1,0 +1,78 @@
+CRITICAL - 2023-02-05 01:00:43 --> Undefined index: pac_nombre
+in APPPATH\Controllers\controladorPaciente.php on line 67.
+ 1 APPPATH\Controllers\controladorPaciente.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_nombre', 'APPPATH\\Controllers\\controladorPaciente.php', 67, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:01:13 --> Undefined index: pac_nombre
+in APPPATH\Controllers\controladorPaciente.php on line 67.
+ 1 APPPATH\Controllers\controladorPaciente.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_nombre', 'APPPATH\\Controllers\\controladorPaciente.php', 67, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:01:19 --> Undefined index: pac_nombre
+in APPPATH\Controllers\controladorPaciente.php on line 67.
+ 1 APPPATH\Controllers\controladorPaciente.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_nombre', 'APPPATH\\Controllers\\controladorPaciente.php', 67, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:01:30 --> Undefined index: pac_nombre
+in APPPATH\Controllers\controladorPaciente.php on line 67.
+ 1 APPPATH\Controllers\controladorPaciente.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_nombre', 'APPPATH\\Controllers\\controladorPaciente.php', 67, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:02:43 --> Undefined index: pac_dni
+in APPPATH\Controllers\controladorPaciente.php on line 68.
+ 1 APPPATH\Controllers\controladorPaciente.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_dni', 'APPPATH\\Controllers\\controladorPaciente.php', 68, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:03:21 --> Undefined index: pac_id
+in APPPATH\Controllers\controladorPaciente.php on line 75.
+ 1 APPPATH\Controllers\controladorPaciente.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pac_id', 'APPPATH\\Controllers\\controladorPaciente.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:03:54 --> The route for "http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\controladorPaciente.php(81): redirect('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:04:30 --> The route for "http://localhost/examenfinal_recalde/pacientes/index.php/pacientes.php" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes.php')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\controladorPaciente.php(81): redirect('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:05:10 --> The route for "http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\controladorPaciente.php(81): redirect('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:08:28 --> The route for "http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\controladorPaciente.php(81): redirect('http://localhost/examenfinal_recalde/pacientes/index.php/pacientes')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

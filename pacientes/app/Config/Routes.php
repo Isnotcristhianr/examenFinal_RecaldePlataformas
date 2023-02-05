@@ -39,6 +39,7 @@ $routes->get('/pacientes', 'controladorPaciente::pacientes');
 
 $routes->get('/obtenerPaciente/(:any)', 'controladorPaciente::obtenerPaciente/$1');
 $routes->get('/asignarImc2', 'controladorPaciente::asignarImc2');
+$routes->post('actualizarPaciente', 'controladorPaciente::actualizarPaciente');
 
 
 
