@@ -2,51 +2,31 @@
 echo $cabecera;
 ?>
 
-<?php
-$id = $datos[0]['pac_id'];
-$nombre = $datos[0]['pac_nombre'];
-$dni = $datos[0]['pac_dni'];
-$altura = $datos[0]['pac_altura'];
-$peso = $datos[0]['pac_peso'];
-$imc = $datos[0]['pac_imc'];
-$resultado = $datos[0]['pac_resultado'];
-?>
-
 <!--Formulario para asignar IMC-->
 <section>
     <div class="text-center p-3 m-5 " style="display: flex; align-items: center; justify-content: center;">
         <div style="display: flex; align-items: center; justify-content: center;">
             <div class="forms-box mb-4 mt-5 bg-dark p-5 rounded text-light">
                 <h2 class="mb-4 text-center text-ligth">Asignar IMC</h2>
-                <form action="http://localhost/examenfinal_recalde/pacientes/index.php/actualizarPaciente" method="POST">
-                    <input type="text" id="id" name="id" hidden value="<?php echo $id ?>">
-                    <div class="user-box">
-                        <label for="pac_nombre">Nombre: </label>
-                        <input type="text" class="input-group mb-3" name="nombre" id="nombre" value="<?php echo $nombre ?>" require>
-                    </div>
-                    <div class="user-box">
-                        <label for="pac_dni">DNI: </label>
-                        <input type="text" class="input-group mb-3" name="dni" id="dni" value="<?php echo $dni ?>" require>
-                    </div>
+                <form action="" method="POST">
                     <div class="user-box">
                         <label for="pac_altura">Altura: </label>
-                        <input type="text" class="input-group mb-3" name="altura" id="altura" value="<?php echo $altura ?>" require placeholder="cm">
+                        <input type="text" class="input-group mb-3" name="altura" id="altura" require placeholder="cm">
                     </div>
                     <div class="user-box">
                         <label for="pac_peso">Peso: </label>
-                        <input type="text" class="input-group mb-3" name="peso" id="peso" value="<?php echo $peso ?>" require placeholder="kg">
+                        <input type="text" class="input-group mb-3" name="peso" id="peso" require placeholder="kg">
                     </div>
                     <div class="user-box">
                         <label for="pac_imc">IMC: </label>
-                        <input type="text" class="input-group mb-3" name="imc" id="imc" value="<?php echo $imc ?>" require>
+                        <input type="text" class="input-group mb-3" name="imc" id="imc" require>
                     </div>
                     <div class="user-box">
                         <label for="pac_resultado">Resultado: </label>
-                        <input type="text" class="input-group mb-3" name="resultado" id="resultado" value="<?php echo $resultado ?>" require>
+                        <input type="text" class="input-group mb-3" name="resultado" id="resultado" require>
                     </div>
 
-                    <button class="btn btn-primary">Actualizar</button>
-                    <a href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" class="btn btn-danger">Atras</a>
+                    <a href="http://localhost/examenfinal_recalde/pacientes/index.php/inicio" class="btn btn-danger">Atras</a>
                 </form>
             </div>
         </div>
@@ -80,6 +60,7 @@ $resultado = $datos[0]['pac_resultado'];
 
     });
 </script>
+
 <?php
 echo $pie;
 ?>

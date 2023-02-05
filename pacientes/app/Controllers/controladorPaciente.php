@@ -63,6 +63,7 @@ class controladorPaciente extends Controller{
     //update
     public function actualizarPaciente()
     {
+        
         $datos = [
             "pac_nombre" => $_POST['nombre'],
             "pac_dni" => $_POST['dni'],
@@ -71,10 +72,12 @@ class controladorPaciente extends Controller{
             "pac_imc" => $_POST['imc'],
             "pac_resultado" => $_POST['resultado'],
         ];
-
+        
         $id = $_POST['id'];
         
         $objLibro = new ModeloPaciente();
+        $datos['cabecera']=view('templates/encabezado.php');
+        $datos['pie']=view('templates/pie.php');
         $respuesta = $objLibro->actualizar($datos, $id);
 
         if ($respuesta) {
@@ -92,6 +95,14 @@ class controladorPaciente extends Controller{
         $datos['pie']=view('templates/pie.php');
 
         return view('/ventanas/filtradoPacientes.php',$datos);
+    }
+
+    //calculo IMC
+    public function calculoImc(){
+        $datos['cabecera']=view('templates/encabezado.php');
+        $datos['pie']=view('templates/pie.php');
+
+        return view('/ventanas/calcularImc.php',$datos);
     }
 }
 ?>

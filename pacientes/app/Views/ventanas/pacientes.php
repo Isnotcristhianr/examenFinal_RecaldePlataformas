@@ -21,8 +21,8 @@ echo $cabecera;
                                 <th>Peso</th>
                                 <th>IMC</th>
                                 <th>Resultado</th>
-                                <th></th>
-                                <th></th>
+                                <th>Editar</th>
+                              
                             </tr>
                         </thead>
                         <tbody id="listadoPacientes">
@@ -40,8 +40,8 @@ echo $cabecera;
                                 echo "<td>" . $value['peso'] . "</td>";
                                 echo "<td>" . $value['imc'] . "</td>";
                                 echo "<td>" . $value['resultado'] . "</td>";
-                                echo "<td> <a href='http://localhost/examenfinal_recalde/pacientes/index.php/obtenerPaciente/" . $value['id'] . "' class='btn btn-warning'>🖊</a></td>";
-                                echo "<td> <a href='http://localhost/examenfinal_recalde/pacientes/eliminar/" . $value['id'] . "' class='btn btn-danger'>🗑</a></td>";
+                                echo "<td> <a href='http://localhost/examenfinal_recalde/pacientes/index.php/obtenerPaciente/" . $value['id'] . "' class='btn btn-warning text-center'>🖊</a></td>";
+                                //echo "<td> <a href='http://localhost/examenfinal_recalde/pacientes/eliminar/" . $value['id'] . "' class='btn btn-danger'>🗑</a></td>";
                                 echo "</tr>";
                              
                             }

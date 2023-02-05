@@ -55,8 +55,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes">Ver Pacientes</a></li>
-                                    <li><a class="dropdown-item" href="#">Calcular IMC</a></li>
-                                    <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/asignarImc">Asignar IMC</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/calculoImc">Calcular IMC</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>

@@ -98,3 +98,43 @@ in APPPATH\Views\ventanas\filtradoPacientes.php on line 18.
  7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 18:07:04 --> Invalid file: "/ventanas/calculoImc.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/ventanas/calculoImc.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/calculoImc.php', [], true)
+ 3 APPPATH\Controllers\controladorPaciente.php(102): view('/ventanas/calculoImc.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->calculoImc()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 18:07:15 --> Invalid file: "/ventanas/calculoImc.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/ventanas/calculoImc.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/calculoImc.php', [], true)
+ 3 APPPATH\Controllers\controladorPaciente.php(102): view('/ventanas/calculoImc.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->calculoImc()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 18:08:25 --> Undefined variable: id
+in APPPATH\Views\ventanas\calcularImc.php on line 12.
+ 1 APPPATH\Views\ventanas\calcularImc.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Views\\ventanas\\calcularImc.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ventanas\\calcularImc.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/calcularImc.php', [], true)
+ 5 APPPATH\Controllers\controladorPaciente.php(102): view('/ventanas/calcularImc.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->calculoImc()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 18:09:09 --> Undefined variable: id
+in APPPATH\Views\ventanas\calcularImc.php on line 12.
+ 1 APPPATH\Views\ventanas\calcularImc.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH\\Views\\ventanas\\calcularImc.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ventanas\\calcularImc.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/calcularImc.php', [], true)
+ 5 APPPATH\Controllers\controladorPaciente.php(102): view('/ventanas/calcularImc.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->calculoImc()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -37,6 +37,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/inicio', 'controladorPaciente::inicio');
 $routes->get('/pacientes', 'controladorPaciente::pacientes');
 $routes->get('/filtradoPacientes', 'controladorPaciente::filtradoPacientes');
+$routes->get('/calculoImc', 'controladorPaciente::calculoImc');
+
 
 $routes->get('/obtenerPaciente/(:any)', 'controladorPaciente::obtenerPaciente/$1');
 $routes->get('/asignarImc2', 'controladorPaciente::asignarImc2');

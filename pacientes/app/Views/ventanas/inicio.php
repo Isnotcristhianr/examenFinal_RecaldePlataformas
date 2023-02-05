@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-12">
                     <a id="btn" href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" class="btn btn-primary">Ver Pacientes</a>
-                    <a id="btn" href="/pacientes/imc" class="btn btn-primary">Controlar IMC</a>
+                    <a id="btn" href="http://localhost/examenfinal_recalde/pacientes/index.php/calculoImc" class="btn btn-primary">Controlar IMC</a>
                 </div>
             </div>
         </div>
