@@ -85,5 +85,13 @@ class controladorPaciente extends Controller{
             </script>');
         }
     }
+
+    //ir filtrado
+    public function filtradoPacientes(){
+        $datos['cabecera']=view('templates/encabezado.php');
+        $datos['pie']=view('templates/pie.php');
+
+        return view('/ventanas/filtradoPacientes.php',$datos);
+    }
 }
 ?>

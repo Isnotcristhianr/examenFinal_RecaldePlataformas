@@ -76,3 +76,25 @@ in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
  5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:32:14 --> Undefined variable: pacientes
+in APPPATH\Views\ventanas\filtradoPacientes.php on line 18.
+ 1 APPPATH\Views\ventanas\filtradoPacientes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pacientes', 'APPPATH\\Views\\ventanas\\filtradoPacientes.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ventanas\\filtradoPacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/filtradoPacientes.php', [], true)
+ 5 APPPATH\Controllers\controladorPaciente.php(94): view('/ventanas/filtradoPacientes.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->filtradoPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-05 01:32:20 --> Undefined variable: pacientes
+in APPPATH\Views\ventanas\filtradoPacientes.php on line 18.
+ 1 APPPATH\Views\ventanas\filtradoPacientes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pacientes', 'APPPATH\\Views\\ventanas\\filtradoPacientes.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ventanas\\filtradoPacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('/ventanas/filtradoPacientes.php', [], true)
+ 5 APPPATH\Controllers\controladorPaciente.php(94): view('/ventanas/filtradoPacientes.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->filtradoPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

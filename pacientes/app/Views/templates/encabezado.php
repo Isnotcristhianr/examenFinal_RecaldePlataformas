@@ -60,7 +60,7 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="http://localhost/examenfinal_recalde/pacientes/index.php/filtradoPacientes">Filtrado</a></li>
                                 </ul>
                             </li>
                         </ul>
