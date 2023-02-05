@@ -1,7 +1,6 @@
 <?php
 echo $cabecera;
 ?>
-<br>
 
 <?php
 $id = $datos[0]['pac_id'];
@@ -12,6 +11,7 @@ $peso = $datos[0]['pac_peso'];
 $imc = $datos[0]['pac_imc'];
 $resultado = $datos[0]['pac_resultado'];
 ?>
+<br>
 
 <!--Formulario para asignar IMC-->
 <section>
@@ -50,7 +50,6 @@ $resultado = $datos[0]['pac_resultado'];
                     <a href="<?= base_url('/ListarLibros') ?>" class="btn btn-danger">Atras</a>
                 </form>
             </div>
-
         </div>
     </div>
 </section>

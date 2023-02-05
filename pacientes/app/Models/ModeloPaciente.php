@@ -4,7 +4,7 @@
 
     use CodeIgniter\Model;
 
-    class ModeloPacientes extends Model
+    class ModeloPaciente extends Model
     {
         protected $table = 'tbl_pacientes';
         protected $primaryKey = 'pac_id';
@@ -23,14 +23,4 @@
             return $valor-> get()-> getResultArray();
         }
 
-
-        public function insertarPaciente($datos)
-        {
-          
-        }
-
-        public function actualizarPaciente($datos)
-        {
-           
-    }
 }

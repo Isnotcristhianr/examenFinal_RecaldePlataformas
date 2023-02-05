@@ -3,8 +3,9 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Model\modeloPacientes as modeloPacientes;
-use App\Models\modeloPacientes as ModelsModeloPacientes;
+use App\Model\ModeloPacientes as ModeloPacientes;
+use App\Models\ModeloPacientes as ModelsModeloPacientes;
+use App\Models\ModeloPaciente;
 
 class controladorPaciente extends Controller{
     
@@ -39,10 +40,10 @@ class controladorPaciente extends Controller{
 
         $data=['pac_id'=>$id];
 
-        $objPaciente = new ModelsModeloPacientes();
+        $objPaciente = new ModeloPaciente();
         $respuesta = $objPaciente->listarPacienteId($data);
 
-        $datos=['paciente'=>$respuesta];
+        $datos=['datos'=>$respuesta];
 
         $datos['cabecera']=view('templates/encabezado.php');
         $datos['pie']=view('templates/pie.php');
@@ -59,5 +60,4 @@ class controladorPaciente extends Controller{
 
     }
 }
-
 ?>
