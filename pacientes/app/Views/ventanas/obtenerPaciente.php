@@ -46,7 +46,7 @@ $resultado = $datos[0]['pac_resultado'];
                     </div>
 
                     <button class="btn btn-primary">Actualizar</button>
-                    <a href="<?= base_url('/ListarLibros') ?>" class="btn btn-danger">Atras</a>
+                    <a href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" class="btn btn-danger">Atras</a>
                 </form>
             </div>
         </div>
