@@ -26,7 +26,7 @@ echo $cabecera;
                         <input type="text" class="input-group mb-3" name="resultado" id="resultado" require>
                     </div>
 
-                    <a href="http://localhost/examenfinal_recalde/pacientes/index.php/inicio" class="btn btn-danger">Atras</a>
+                    <a href="http://localhost/examenfinal_recalde/pacientes/index.php/pacientes" class="btn btn-danger">Atras</a>
                 </form>
             </div>
         </div>

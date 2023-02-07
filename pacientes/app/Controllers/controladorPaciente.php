@@ -76,8 +76,7 @@ class controladorPaciente extends Controller{
         $id = $_POST['id'];
         
         $objLibro = new ModeloPaciente();
-        $datos['cabecera']=view('templates/encabezado.php');
-        $datos['pie']=view('templates/pie.php');
+      
         $respuesta = $objLibro->actualizar($datos, $id);
 
         if ($respuesta) {

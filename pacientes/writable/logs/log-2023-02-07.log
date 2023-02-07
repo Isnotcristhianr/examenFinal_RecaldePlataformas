@@ -1,0 +1,230 @@
+ERROR - 2023-02-07 17:34:57 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '1')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:34:57 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:35:05 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '1')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:35:05 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:35:19 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '4')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:35:19 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '4')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:35:25 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '4')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:35:25 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '4')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:35:53 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '4')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:35:53 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '4')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:36:16 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '1')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:36:16 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:36:40 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '5')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:36:40 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '5')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:37:09 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '10')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:37:09 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '10')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:38:06 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '10')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:38:06 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '10')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 17:39:03 --> mysqli_sql_exception: Unknown column 'cabecera' in 'field list' in C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_pac...', 0)
+#1 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pac...')
+#2 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pac...')
+#3 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pac...', Array, false)
+#4 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\app\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar(Array, '10')
+#6 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+#7 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+#8 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\examenFinal_Recalde\pacientes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 17:39:03 --> Unknown column 'cabecera' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2462): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pacientes` SET `pac_nombre` = :pac_nombre:, `pac_dni` = :pac_dni:, `pac_altura` = :pac_altura:, `pac_peso` = :pac_peso:, `pac_imc` = :pac_imc:, `pac_resultado` = :pac_resultado:, `cabecera` = :cabecera:, `pie` = :pie:
+WHERE `pac_id` = :pac_id:', [...], false)
+ 2 APPPATH\Models\ModeloPaciente.php(31): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\controladorPaciente.php(81): App\Models\ModeloPaciente->actualizar([...], '10')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\controladorPaciente->actualizarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\controladorPaciente))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
